@@ -121,7 +121,7 @@ function App() {
       <div style={{ fontWeight: "bold" }}>
         {historyNumber.map((val, idx) => (
           <div key={idx}>
-            {val.sort().join(", ")}
+            {val.sort((a, b) => a - b).join(", ")}
             <br />
           </div>
         ))}
