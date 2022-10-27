@@ -75,7 +75,7 @@ function App() {
   return (
     <div className="App">
       <div style={{ fontSize: 20, fontWeight: "bold", margin: 10 }}>
-        딸/아들, 로또번호 좀 골라줘
+        로또번호 좀 골라줘
       </div>
       <div
         style={{
