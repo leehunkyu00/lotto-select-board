@@ -4,7 +4,7 @@ import historyData from './history';
 import './App.css';
 
 const MAX_NUMBER = 45;
-const SELECT_NUMBER_COUNT = 7;
+const SELECT_NUMBER_COUNT = 6;
 
 function App() {
   const [historyNumber, setHistoryNumber] = useState([]);
@@ -65,7 +65,7 @@ function App() {
   function checkHadWin(arr) {
     const sortedStr = arr.sort().toString();
     for (let i = 0; i < historyData.length; i++) {
-      if (historyData[i].sort().toString() == sortedStr) {
+      if (historyData[i].slice(0, -1).sort().toString() == sortedStr) {
         return true;
       }
     }
