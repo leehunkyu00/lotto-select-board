@@ -24,8 +24,9 @@ function App() {
             background: "gray",
             color: "white",
             fontWeight: "bold",
-            width: 80,
-            height: 80,
+            textAlign: "center",
+            width: '10vw',
+            height: '13vh',
             fontSize: 30,
           }}
           onClick={() =>
